@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow Navigation</title>
+    <style>
+        .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 100;
+    max-width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 75px; /* Pushes links to the right */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.nav-links a:hover {
+    color: #4A90E2;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav-container">
+        <h1 class="logo">WeatherNow</h1>
+        <ul class="nav-links">
+            <li><a href="weather.html" target="content-frame">Weather</a></li>
+            <li><a href="map.html" target="content-frame">Map</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
